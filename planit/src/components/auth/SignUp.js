@@ -23,19 +23,19 @@ class SignUp extends Component {
                     <h5 className="grey-text text-darken-3">SignUp</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" onChange={this.handleChange}/>
+                        <input type="email" id="email" autocomplete="off" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password" onChange={this.handleChange}/>
+                        <input type="password" id="password" autocomplete="off" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
                         <label htmlFor="firstname">FirstName</label>
-                        <input type="text" id="firstname" onChange={this.handleChange}/>
+                        <input type="text" id="firstname" autocomplete="off" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
                         <label htmlFor="lastname">LastName</label>
-                        <input type="text" id="lastname" onChange={this.handleChange}/>
+                        <input type="text" id="lastname" autocomplete="off" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
                         <button className="btn pink lighten-1 z-depth-2">SignUp</button>
