@@ -7,7 +7,7 @@ class SignIn extends Component {
     }
     handleChange = (e) => {
         this.setState({ 
-            [e.target.value] : e.target.value
+            [e.target.id] : e.target.value
         })
     }
     handleSubmit = (e) => {
@@ -28,7 +28,7 @@ class SignIn extends Component {
                         <input type="password" id="password" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
-                        <button className="btn pink lighten-3 z-depth-2">Login</button>
+                        <button className="btn pink lighten-1 z-depth-2">Login</button>
                     </div>
                 </form>
             </div>
