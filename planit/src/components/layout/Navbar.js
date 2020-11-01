@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import SignedInLinks from './SignedInLink'
 import SignedOutLinks from './SignedOutLink'
+import { connect } from 'react-redux'
+
 const Navbar = () => {
     return (
         <nav className="nav-wrapper indigo darken-4">
@@ -13,5 +15,11 @@ const Navbar = () => {
         </nav>
     )
 }
+const  mapStatetoProps = (state) => {
+    console.log(state)
+    return{
 
-export default Navbar
+    }
+}
+
+export default connect(mapStatetoProps)(Navbar)
